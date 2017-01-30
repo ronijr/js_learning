@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dialog Box prompt</title>
+	</head>
+<body>
+	<button type="button" onclick="myFunction()">Dilalog Prompt</button>
+	<div id="msg"></div>
+
+	<script type="text/javascript">
+	function myFunction()
+	{
+		var  frame = prompt("Mohon disi dengan nama anda: ","Nama Kamu");
+		document.getElementById('msg').innerHTML = "Hay, " + frame;
+	}
+	</script>
+</body>
+</html>

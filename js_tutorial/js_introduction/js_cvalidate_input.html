@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+<body>
+	<h1>JavaScript Dapat Mempalidasi Input</h1>
+	<p>Mohon masukan nomber antara 1 dan 10</p>
+	<input id="numb">
+	<button type="button" onclick="myFunction()">Klik Disini</button>
+	<p id="demo"></p>
+	<script type="text/javascript">
+	function myFunction()
+	{
+		var x, text;
+
+		//Memanggil nilai dari input dengan id="numb"
+		var x =	document.getElementById('numb').value;
+		//jika x bukan nomber atau kurang dari 1 atau lebih besar dari 10
+		if (isNaN(x) || x < 1 || x > 10)
+		{
+			text = "Inputan Salah bro";
+		} else
+		{
+			text = "Inputan Ok bro";
+		}
+
+		document.getElementById('demo').innerHTML= text;
+
+	}
+	</script>
+</body>
+</html>

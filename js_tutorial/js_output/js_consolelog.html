@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+<body>
+	<h1>Halama Web Peratama Saya</h1>
+	<h1>Pararaf Pertama Saya</h1>
+	<input id="numb1"> <br>
+	<span> * </span>
+	<input id="numb2">
+	<button type="button" onclick="myFunction()">Jumlah</button>
+	<p id="text"></p>
+	<script >
+	function myFunction(){
+		var numb1, numb2, text, total;
+
+		numb1 = document.getElementById('numb1').value;
+		numb2 = document.getElementById('numb2').value;
+
+		if(isNaN(numb1) || isNaN(numb2))
+		{
+			 document.getElementById('text').innerHTML = "Data Harus Angka bro";
+		}else
+		{
+			total = numb1 * numb2;
+			document.getElementById('text').innerHTML = total;
+			console.log(total);
+		}
+	}
+
+	</script>
+</body>
+</html>

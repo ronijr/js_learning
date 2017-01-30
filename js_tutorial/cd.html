@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button type="button" onclick="myFunction(23,45)">test</button>
+<script type="text/javascript">
+	// function myFunction(a , b)
+	// {
+	// 	var tmp = b;
+
+	// 	while(tmp !== 0)
+	// 	{
+	// 		tmp = Math.floor(tmp / 10) ;
+	// 		console.log(tmp);
+	// 		a *= 10;
+	// 	}
+
+	// 	return a+""+tmp;
+	// }
+	// console.log(myFunction(23,45));
+
+	function addres(address)
+	{
+		var protocol = "",
+			domain = "",
+			context = "",
+			result = address.split("://");
+
+			protocol = result[0];
+			domain = result[1];
+			result = result[1].split(".com");
+
+			document.write(result[1].length)
+			if(result[1].length){
+				context = result[1].split("/")[1];
+
+				return [protocol, domain, context];
+			}
+
+			return [protocol, domain];
+
+	}
+
+	
+</script>
+</body>
+</html> 
